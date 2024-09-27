@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Given a text response, extract claims made in the text.",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "response",
+      "description": "The text to continue.",
+      "default": ""
+    },
+    {
+      "name": "query",
+      "description": "Query response is with respect to.",
+      "default": ""
+    }
+  ]
+}

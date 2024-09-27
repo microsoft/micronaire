@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Measures how well the model's generated answers align with information from the source data (user-defined context).",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "context",
+      "description": "The context used to answer the question.",
+      "default": ""
+    },
+    {
+      "name": "answer",
+      "description": "The answer that was given based on the context.",
+      "default": ""
+    }
+  ]
+}

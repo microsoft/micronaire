@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Given two claims determine whether they are similar",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "claim_1",
+      "description": "First claim",
+      "default": ""
+    },
+    {
+      "name": "claim_2",
+      "description": "Second claim",
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Measures the similarity between a source data (ground truth) sentence and the generated response by an AI model.",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "answer",
+      "description": "The generated answer to the question asked by the user.",
+      "default": ""
+    },
+    {
+      "name": "ground_truth",
+      "description": "The ground truth answer to the question.",
+      "default": ""
+    }
+  ]
+}

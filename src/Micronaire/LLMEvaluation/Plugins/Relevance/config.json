@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "description": "Measures the extent to which the model's generated responses are pertinent and directly related to the given questions.",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "question",
+      "description": "The question initially asked by the user",
+      "default": ""
+    },
+    {
+      "name": "context",
+      "description": "The context used to answer the question.",
+      "default": ""
+    },
+    {
+      "name": "answer",
+      "description": "The answer that was given based on the context.",
+      "default": ""
+    }
+  ]
+}

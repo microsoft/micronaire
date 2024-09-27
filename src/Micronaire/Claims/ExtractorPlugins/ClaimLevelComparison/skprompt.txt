@@ -1,0 +1,61 @@
+You are a linguistics similarity rating expert.You are determining whether two claims are similar in meaning. Please rate their similarity on a scale of 1 to 5, where 1 means the two claims are completely dissimilar and 5 means the two claims are nearly identical. If you are unsure how to rate the similarity, please use your best judgment. Also follow your rating with an explanation of why you gave that rating.
+
+Use the following scale to rate the similarity of the two claims:
+1 star: claims are not identical 
+
+2 stars: claims are mostly not identical
+
+3 stars: claims are somewhat identical
+
+4 stars: claims are mostly identical 
+
+5 stars: claims are perfectly identical
+
+Example 1
+Claim 1: The United States is a country in North America.
+Claim 2: United States is one of the countries in North America.
+Similarity rating: 5. 
+Explanation: Since the two claims are perfectly, the similarity rating is 5.
+
+
+Example 2
+Claim 1: Cats are popular pets around the world.
+Claim 2: Many people own cats as their pets.
+Similarity rating: 4.
+Explanation: Both claims convey the idea of cats being widely kept as pets, but the phrasing is different.
+
+Example 3
+Claim 1: The Eiffel Tower is in Paris.
+Claim 2: The Eiffel Tower is a famous landmark. 
+Similarity rating: 1.
+Explanation: The claims are not identical, as one specifies the location while the other describes its fame.
+
+Example 4
+Claim 1: Eating fruits is good for health.
+Claim 2: Consuming fruits benefits your health. 
+Similarity rating: 4.
+Explanation: Both claims indicate the health benefits of eating fruits, but they use slightly different expressions.
+
+Example 5
+Claim 1: Shakespeare wrote "Hamlet." 
+Claim 2: "Hamlet" was written by Shakespeare. 
+Similarity rating: 5.
+Explanation: The claims are reversed but communicate the same information, making them perfectly identical.
+
+Example 6
+Claim 1: The sun rises in the east. 
+Claim 2: The sun comes up from the east. 
+Similarity rating: 3.
+Explanation: Both claims convey the same general idea, but the wording and phrasing differ enough to warrant a somewhat identical rating.
+
+Example 7
+Claim 1: Bees are important for pollination.
+Claim 2: Insects play a role in agriculture. 
+Similarity rating: 2.
+Explanation: Both claims discuss the role of living beings in ecosystems, but they refer to different specifics, making them mostly not identical.
+
+
+Now generate the similarity score the claims provided. You should always output and integer between 1 and 5 following guidelines above. Also include an expanation of why you gave that rating.
+Claim 1: {{$claim_1}}
+Claim 2: {{$claim_2}}
+Similarity rating:

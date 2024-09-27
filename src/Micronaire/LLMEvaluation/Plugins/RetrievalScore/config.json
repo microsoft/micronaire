@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Measures the extent to which the model's retrieved documents are pertinent and directly related to the given questions.",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "question",
+      "description": "The question asked by the user.",
+      "default": ""
+    },
+    {
+      "name": "context",
+      "description": "The context retrieved by the agent for helping to answer the question.",
+      "default": ""
+    }
+  ]
+}

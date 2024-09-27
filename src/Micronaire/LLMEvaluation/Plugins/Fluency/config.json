@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "description": "Measures the grammatical proficiency of a generative AI's predicted answer.",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 500,
+      "temperature": 0.3,
+      "top_p": 0.5,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "question",
+      "description": "The question asked by the user.",
+      "default": ""
+    },
+    {
+      "name": "answer",
+      "description": "The answer that was given to the question based on the context.",
+      "default": ""
+    }
+  ]
+}
