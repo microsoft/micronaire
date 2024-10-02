@@ -1,3 +1,5 @@
+<p align="center"><img src='https://github.com/user-attachments/assets/36a76139-89e6-4d5e-8c25-15d5bff895be' width='200px' /> </p>
+
 # Micronaire
 
 RAG pipelines enable developers to augment their chat experiences with informational
