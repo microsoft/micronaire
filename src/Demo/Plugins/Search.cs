@@ -35,9 +35,7 @@ public class Search
         var vectorSearch = _collection as IVectorizedSearch<Paragraph>;
         var searchVector = await _embeddingGenerationService.GenerateEmbeddingAsync(query);
         var searchResult = (
-            await vectorSearch!
-                .VectorizedSearchAsync(searchVector, new() { Limit = 1 })
-                .ToListAsync()
+            await vectorSearch!.VectorizedSearchAsync(searchVector, new() { Top = 1 }).ToListAsync()
         )
             .First()
             .Record.Text;
