@@ -7,6 +7,8 @@
     <Description>Micronaire brings actionable metrics to RAG pipeline evaluation by taking a set of ground truth questions and answers as well as a RAG pipeline, evaluating the pipeline against the ground truth using our metrics, and then producing an evaluation report.</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>micronaire-logo.png</PackageIcon>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AanalysisMode>All</AanalysisMode>
@@ -19,6 +21,7 @@
   <ItemGroup>
     <None Include="..\..\LICENSE" Pack="true" PackagePath=""/>
     <None Include="..\..\README.md" Pack="true" PackagePath=""/>
+    <None Include="..\..\img\micronaire-logo.png" Pack="true" PackagePath=""/>
   </ItemGroup>
 
   <ItemGroup>

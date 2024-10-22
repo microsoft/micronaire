@@ -1,4 +1,4 @@
-<p align="center"><img src='https://github.com/user-attachments/assets/36a76139-89e6-4d5e-8c25-15d5bff895be' width='200px' /> </p>
+<p align="center"><img src='img/micronaire-logo.png' width='200px' /> </p>
 
 # Micronaire
 
@@ -17,6 +17,8 @@ dotnet pack .\src\Micronaire\Micronaire.csproj
 ```
 
 This will generate a NuGet package in the `bin` directory. This package can then be uploaded to [NuGet](nuget.org)!
+
+The package page is [here](https://www.nuget.org/packages/Micronaire).
 
 In the future, this will be automated through a GitHub action.
 
