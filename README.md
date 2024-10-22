@@ -1,19 +1,26 @@
-<p align="center"><img src='https://github.com/user-attachments/assets/36a76139-89e6-4d5e-8c25-15d5bff895be' width='200px' /> </p>
+<p align="center"><img src='img/micronaire-logo.png' width='200px' /> </p>
 
 # Micronaire
 
-RAG pipelines enable developers to augment their chat experiences with informational
-documents that their agents can leverage to provide better answers. Evaluating these
-pipelines is a new area of study, with solutions like
-[RAGChecker](https://github.com/amazon-science/RAGChecker) and
-[RAGAS](https://github.com/explodinggradients/ragas) being state of the art
-frameworks that are implemented in Python. This project aims to take these ideas and
-bring them to DotNet through Semantic Kernel.
+RAG pipelines enable developers to augment their chat experiences with informational documents that their agents can leverage to provide better answers. Evaluating these pipelines is a new area of study, with solutions like [RAGChecker](https://github.com/amazon-science/RAGChecker) and [RAGAS](https://github.com/explodinggradients/ragas) being state of the art frameworks that are implemented in Python. This project aims to take these ideas and bring them to DotNet through Semantic Kernel.
 
-Micronaire brings actionable metrics to RAG pipeline evaluation by taking a set of
-ground truth questions and answers as well as a RAG pipeline, evaluating the
-pipeline against the ground truth using our metrics (see below), and then producing
-an evaluation report.
+Micronaire brings actionable metrics to RAG pipeline evaluation by taking a set of ground truth questions and answers as well as a RAG pipeline, evaluating the pipeline against the ground truth using our metrics (see below), and then producing an evaluation report.
+
+## Packaging
+
+Before packaging, ensure that the version of the package has been bumped according to [Semantic Versioning guidelines](https://semver.org/). This can be automated in the future.
+
+To package the project, run the following command:
+
+```powershell
+dotnet pack .\src\Micronaire\Micronaire.csproj
+```
+
+This will generate a NuGet package in the `bin` directory. This package can then be uploaded to [NuGet](nuget.org)!
+
+The package page is [here](https://www.nuget.org/packages/Micronaire).
+
+In the future, this will be automated through a GitHub action.
 
 ## Contributing
 
