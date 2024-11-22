@@ -9,15 +9,17 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\external\semantic-kernel\dotnet\src\SemanticKernel.Core\SemanticKernel.Core.csproj" />
-		<ProjectReference Include="..\..\external\semantic-kernel\dotnet\src\SemanticKernel.Abstractions\SemanticKernel.Abstractions.csproj" />
-		<ProjectReference Include="..\..\external\semantic-kernel\dotnet\src\Connectors\Connectors.AzureOpenAI\Connectors.AzureOpenAI.csproj" />
-		<ProjectReference Include="..\..\external\semantic-kernel\dotnet\samples\Concepts\Concepts.csproj" />
 		<ProjectReference Include="..\Micronaire\Micronaire.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Docker.DotNet" Version="3.125.15" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="1.30.0" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.Qdrant" Version="1.30.0-preview" />
+		<PackageReference Include="Microsoft.SemanticKernel.Plugins.Memory" Version="1.30.0-alpha" />
+		<PackageReference Include="Qdrant.Client" Version="1.12.0" />
+		<PackageReference Include="System.Linq.Async" Version="6.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -27,10 +29,10 @@
 	</ItemGroup>
 	<ItemGroup>
 		<None Update="data\GroundTruthAnswers.json">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 		<None Update="data\GroundTruthAnswersMinimal.json">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 		<None Update="data\Romeo and Juliet.txt">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

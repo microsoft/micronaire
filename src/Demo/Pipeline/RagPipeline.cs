@@ -2,11 +2,11 @@
 // Licensed under the MIT License.
 using Micronaire;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.AzureOpenAI;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
-using Microsoft.SemanticKernel.Data;
 using Microsoft.SemanticKernel.Embeddings;
 using Microsoft.SemanticKernel.Text;
 

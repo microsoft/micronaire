@@ -19,9 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\LICENSE" Pack="true" PackagePath=""/>
-    <None Include="..\..\README.md" Pack="true" PackagePath=""/>
-    <None Include="..\..\img\micronaire-logo.png" Pack="true" PackagePath=""/>
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="" />
+    <None Include="..\..\img\micronaire-logo.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,17 +29,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="9.0.0" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.30.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-	
-   <ItemGroup>
-    <ProjectReference Include="..\..\external\semantic-kernel\dotnet\src\SemanticKernel.Core\SemanticKernel.Core.csproj" />
-    <ProjectReference Include="..\..\external\semantic-kernel\dotnet\src\SemanticKernel.Abstractions\SemanticKernel.Abstractions.csproj" />
-    <ProjectReference Include="..\..\external\semantic-kernel\dotnet\src\Connectors\Connectors.AzureOpenAI\Connectors.AzureOpenAI.csproj" />
-    <ProjectReference Include="..\..\external\semantic-kernel\dotnet\samples\Concepts\Concepts.csproj" />
-  </ItemGroup>
-
 </Project>

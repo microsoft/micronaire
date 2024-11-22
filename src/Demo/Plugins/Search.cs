@@ -2,8 +2,8 @@
 // Licensed under the MIT License.
 using System.ComponentModel;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.Data;
 using Microsoft.SemanticKernel.Embeddings;
 
 namespace Demo;
@@ -34,11 +34,9 @@ public class Search
     {
         var vectorSearch = _collection as IVectorizedSearch<Paragraph>;
         var searchVector = await _embeddingGenerationService.GenerateEmbeddingAsync(query);
-        var searchResult = (
-            await vectorSearch!.VectorizedSearchAsync(searchVector, new() { Top = 1 }).ToListAsync()
-        )
-            .First()
-            .Record.Text;
+        var searchResults = await vectorSearch!.VectorizedSearchAsync(searchVector, new() { Top = 1 });
+        var firstResult = await searchResults.Results.FirstAsync();
+        var searchResult = firstResult.Record.Text;
         _logger.LogInformation("Got search result:\n{searchResult}", searchResult);
         return searchResult;
     }

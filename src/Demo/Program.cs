@@ -1,12 +1,9 @@
 ﻿// Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 using Demo;
-using Memory.VectorStoreFixtures;
 using Micronaire;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
-#pragma warning disable SKEXP0001
 
 var qdrantFixture = new VectorStoreQdrantContainerFixture();
 await qdrantFixture.ManualInitializeAsync();
@@ -48,4 +45,3 @@ finally
 {
     await qdrantFixture.DisposeAsync();
 }
-#pragma warning restore SKEXP0001
